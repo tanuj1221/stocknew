@@ -1,0 +1,107 @@
+{
+  "meta": { "found": 57648, "returned": 3, "limit": 3, "page": 1 },
+  "data": [
+    {
+      "uuid": "5577a28f-7100-4b5d-8b96-8595fff073c6",
+      "title": "3 reasons why the stock market rally may be stopped in its tracks",
+      "description": "One top Wall Street strategist makes a compelling case for a pause in the market rally.",
+      "keywords": "",
+      "snippet": "It's time for sizzling stock prices to take a breather.\n\nThe market may be at that point now as summer winds to a close, one top Wall Street strategist argued.\n...",
+      "url": "https://finance.yahoo.com/news/3-reasons-why-the-stock-market-rally-may-be-stopped-in-its-tracks-135810619.html?.tsrc=rss",
+      "image_url": "https://s.yimg.com/ny/api/res/1.2/9MxLTLIpbZdSfRK1eud0wA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MTc-/https://s.yimg.com/os/creatr-uploaded-images/2023-07/58375390-35f3-11ee-9ecf-62d3d735f114",
+      "language": "en",
+      "published_at": "2023-08-08T13:58:10.000000Z",
+      "source": "finance.yahoo.com",
+      "relevance_score": null,
+      "entities": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc.",
+          "exchange": "NASDAQ",
+          "exchange_long": "NASDAQ Stock Exchange",
+          "country": "us",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 8.766802,
+          "sentiment_score": -0.235,
+          "highlights": [
+            {
+              "highlight": "And market leader <em>Apple</em> (AAPL) has seen its stock fall below the 50-day moving average after a mixed earnings report a week ago.\n\nMonth to date, the Dow Jones Industrial Average (^DJI), Nasdaq Composite (^IXIC), and S&P 500 (^GSPC) are all slightly lower.",
+              "sentiment": -0.235,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "d68c367a-2dac-4d46-82d3-a1cbf7bc0bc1",
+      "title": "Apple's $3 Trillion Valuation May Be Gone for Good",
+      "description": "Shares of Apple (NASDAQ: AAPL) slipped last week following a quarterly report that was mostly bad news.  Apple's sprawling services segment was a bright spot, but it wasn't enough to push the headline numbers higher.  Apple stock had been rallying this year, briefly pushing the company's market capitalization above $3 trillion.",
+      "keywords": "",
+      "snippet": "Shares of Apple (NASDAQ: AAPL) slipped last week following a quarterly report that was mostly bad news. Apple's sprawling services segment was a bright spot, bu...",
+      "url": "https://finance.yahoo.com/m/9ea9255a-d009-39c2-98fa-4ca6a1bf689f/apple%27s-%243-trillion-valuation.html?.tsrc=rss",
+      "image_url": "https://s.yimg.com/ny/api/res/1.2/WOsln3Qp0.lE4H.iXpFxQQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD05NjA-/https://media.zenfs.com/en/motleyfool.com/e1613815155ce3c2bd471fc18b0f02e1",
+      "language": "en",
+      "published_at": "2023-08-08T13:40:00.000000Z",
+      "source": "finance.yahoo.com",
+      "relevance_score": null,
+      "entities": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc.",
+          "exchange": "NASDAQ",
+          "exchange_long": "NASDAQ Stock Exchange",
+          "country": "us",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 32.590286,
+          "sentiment_score": 0.0772,
+          "highlights": [
+            {
+              "highlight": "Shares of <em>Apple</em> (<em>NASDAQ</em>: <em>AAPL</em>) slipped last week following a quarterly report that was mostly bad news. Apple's sprawling services segment was a bright spot, but it wasn't enough to push the headline numbers higher. <em>Apple</em> stock had been rallying this year, briefly pushing the company's market capitalization above $3 trillion.",
+              "sentiment": 0.0772,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    },
+    {
+      "uuid": "da25720e-2727-4e85-ac0b-c9f978ba73a1",
+      "title": "2 No-Brainer Warren Buffett Stocks to Buy in August",
+      "description": "Warren Buffett is widely regarded as one of the most successful investors of all time, and for good reason.  Amazon (NASDAQ: AMZN) and Apple (NASDAQ: AAPL) are both no-brainer picks this month.  Berkshire Hathaway, under the direction of Buffett protégés Ted Weschler and Todd Combs, began buying Amazon shares in 2019.",
+      "keywords": "",
+      "snippet": "Warren Buffett is widely regarded as one of the most successful investors of all time, and for good reason. Amazon (NASDAQ: AMZN) and Apple (NASDAQ: AAPL) are b...",
+      "url": "https://finance.yahoo.com/m/96459342-c4ff-339f-9435-bab47a345db6/2-no-brainer-warren-buffett.html?.tsrc=rss",
+      "image_url": "https://s.yimg.com/ny/api/res/1.2/.oRmqHXqgxw8utRNd2WVlA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/motleyfool.com/27dfa8ef9553b4c20b3448c1f936a445",
+      "language": "en",
+      "published_at": "2023-08-08T13:30:00.000000Z",
+      "source": "finance.yahoo.com",
+      "relevance_score": null,
+      "entities": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc.",
+          "exchange": "NASDAQ",
+          "exchange_long": "NASDAQ Stock Exchange",
+          "country": "us",
+          "type": "equity",
+          "industry": "Technology",
+          "match_score": 32.56521,
+          "sentiment_score": 0.5574,
+          "highlights": [
+            {
+              "highlight": "Amazon (NASDAQ: AMZN) and <em>Apple</em> (<em>NASDAQ</em>: <em>AAPL</em>) are both no-brainer picks this month. Berkshire Hathaway, under the direction of Buffett protégés Ted Weschler and Todd Combs, began buying Amazon shares in 2019.",
+              "sentiment": 0.5574,
+              "highlighted_in": "main_text"
+            }
+          ]
+        }
+      ],
+      "similar": []
+    }
+  ]
+}

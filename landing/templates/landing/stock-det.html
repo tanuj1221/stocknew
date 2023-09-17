@@ -1,0 +1,390 @@
+<html lang="en" dir="ltr">
+  {% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://static.tradingview.com/static/bundles/embed/en.68611.b551ac18425982cf6ff5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.development.js"
+    ></script>
+    <title>Side Navigation Bar in HTML CSS JavaScript</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="logo_item">
+          <img src="/static/images/nav-logo.png" alt="" />
+          <span class="title-name1">UP</span>
+          <span class="title-name2">WALLSTREET</span>
+        </div>
+        <div class="search_bar">
+          <input
+            type="text"
+            value=""
+            id="searchInput"
+            class="searchbar"
+            placeholder="Enter stock symbol"
+          />
+          <button id="searchButton">
+            <i class="bx bx-search bx-tada"></i>
+          </button>
+        </div>
+        <div class="navbar_content">
+          <i class="bi bi-grid"></i>
+          <i class="bx bx-sun" id="darkLight"></i>
+          <i class="bx bx-bell"></i>
+          <img src="/static/images/img2.png" alt="" class="profile" />
+          <a href="http://localhost:8000/accounts/logout">
+            <img src="/static/images/logout-img-nc.png" alt="" />
+          </a>
+        </div>
+      </nav>
+      <!-- Left sidebar -->
+
+      <div class="graph">
+        <div class="main-chart card1">
+          <div class="chartele" id="ele"></div>
+          <div class="button-list">
+            <button class="interval-button" id="5Years" data-value="5 Y"> 5 Y</button>
+            <button class="interval-button" id="1Year" data-value="1 Y">
+              1 Y
+            </button>
+            <button class="interval-button" id="6monthButton" data-value="6 M">
+              6 M
+            </button>
+            <button class="interval-button" id="1monthButton" data-value="1 M">
+              1 M
+            </button>
+            <button class="interval-button" id="1daysButton" data-value="1 D">
+              1 D
+            </button>
+          </div>
+        </div>
+        <div class="right-sidebar card1">
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Profile 1 warning</td>
+              <td id="profile_warning"></td>
+            </tr>
+            <tr>
+              <td>Sector</td>
+              <td id="sector"></td>
+            </tr>
+            <tr>
+              <td>Industry</td>
+              <td id="industry"></td>
+            </tr>
+            <tr>
+              <td>Market Cap ($M USD)</td>
+              <td id="market_cap"></td>
+            </tr>
+            <tr>
+              <td>Short % of Float</td>
+              <td id="short_percent"></td>
+            </tr>
+            <tr>
+              <td>Employees</td>
+              <td id="employees"></td>
+            </tr>
+            <tr>
+              <td>Sales ($M)</td>
+              <td id="sales"></td>
+            </tr>
+            <tr>
+              <td>Shares Outstanding</td>
+              <td id="shares_outstanding"></td>
+            </tr>
+            <tr>
+              <td>IPO Date</td>
+              <td id="ipo_date"></td>
+            </tr>
+            <tr>
+              <td>Ex-Dividend Date</td>
+              <td id="ex_dividend_date"></td>
+            </tr>
+            <tr>
+              <td>Last Reported Qtr.</td>
+              <td id="last_reported_qtr"></td>
+            </tr>
+            <tr>
+              <td>Next Quarter Report Date</td>
+              <td id="next_quarter_report"></td>
+            </tr>
+            <tr>
+              <td>Headquarters</td>
+              <td id="headquarters"></td>
+            </tr>
+            <tr>
+              <td>Homepage</td>
+              <td id="homepage"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="card1">
+          <table id="stock-table">
+            <tbody>
+                <tr>
+                    <th>Symbol</th>
+                    <td id="symbol-data"></td>
+                </tr>
+                <tr>
+                    <th>Open</th>
+                    <td id="open-data"></td>
+                </tr>
+                <tr>
+                    <th>High</th>
+                    <td id="high-data"></td>
+                </tr>
+                <tr>
+                    <th>Low</th>
+                    <td id="low-data"></td>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <td id="price-data"></td>
+                </tr>
+                <tr>
+                    <th>Volume</th>
+                    <td id="volume-data"></td>
+                </tr>
+                <tr>
+                    <th>Latest Trading Day</th>
+                    <td id="latest-day-data"></td>
+                </tr>
+                <tr>
+                    <th>Previous Close</th>
+                    <td id="previous-close-data"></td>
+                </tr>
+                <tr>
+                    <th>Change</th>
+                    <td id="change-data"></td>
+                </tr>
+                <tr>
+                    <th>Change Percent</th>
+                    <td id="change-percent-data"></td>
+                </tr>
+            </tbody>
+        </table>
+          <div id="des" class="des"></div>
+        </div>
+      </div>
+
+      <div class="second-card">
+        <div class="card2">
+          <h3>Financial Ratios</h3>
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>PERatio</td>
+              <td id="PERatio"></td>
+            </tr>
+            <tr>
+              <td>PEGRatio</td>
+              <td id="PEGRatio"></td>
+            </tr>
+            <tr>
+              <td>DividendYield</td>
+              <td id="DividendYield"></td>
+            </tr>
+            <tr>
+              <td>ProfitMargin</td>
+              <td id="ProfitMargin"></td>
+            </tr>
+            <tr>
+              <td>OperatingMarginTTM</td>
+              <td id="OperatingMarginTTM"></td>
+            </tr>
+            <tr>
+              <td>ReturnOnAssetsTTM</td>
+              <td id="ReturnOnAssetsTTM"></td>
+            </tr>
+            <tr>
+              <td>ReturnOnEquityTTM</td>
+              <td id="ReturnOnEquityTTM"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="card2">
+          <h3>Earnings and Revenue</h3>
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>EBITDA</td>
+              <td id="EBITDA"></td>
+            </tr>
+            <tr>
+              <td>EPS</td>
+              <td id="EPS"></td>
+            </tr>
+            <tr>
+              <td>RevenuePerShareTTM</td>
+              <td id="RevenuePerShareTTM"></td>
+            </tr>
+            <tr>
+              <td>RevenueTTM</td>
+              <td id="RevenueTTM"></td>
+            </tr>
+            <tr>
+              <td>GrossProfitTTM</td>
+              <td id="GrossProfitTTM"></td>
+            </tr>
+            <tr>
+              <td>DilutedEPSTTM</td>
+              <td id="DilutedEPSTTM"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="card2">
+          <h3>Stock Performance</h3>
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>52WeekHigh</td>
+              <td id="52WeekHigh"></td>
+            </tr>
+            <tr>
+              <td>52WeekLow</td>
+              <td id="52WeekLow"></td>
+            </tr>
+            <tr>
+              <td>50DayMovingAverage</td>
+              <td id="50DayMovingAverage"></td>
+            </tr>
+            <tr>
+              <td>200DayMovingAverage</td>
+              <td id="200DayMovingAverage"></td>
+            </tr>
+            <tr>
+              <td>Beta</td>
+              <td id="Beta"></td>
+            </tr>
+            <tr>
+              <td>AnalystTargetPrice</td>
+              <td id="AnalystTargetPrice"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="card2">
+          <h3>Dividend Info</h3>
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>DividendPerShare</td>
+              <td id="DividendPerShare"></td>
+            </tr>
+            <tr>
+              <td>DividendYield</td>
+              <td id="DividendYield"></td>
+            </tr>
+            <tr>
+              <td>DividendDate</td>
+              <td id="DividendDate"></td>
+            </tr>
+            <tr>
+              <td>ExDividendDate</td>
+              <td id="ExDividendDate"></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="card2">
+          <h3>Valuation</h3>
+          <table>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>PriceToSalesRatioTTM</td>
+              <td id="PriceToSalesRatioTTM"></td>
+            </tr>
+            <tr>
+              <td>PriceToBookRatio</td>
+              <td id="PriceToBookRatio"></td>
+            </tr>
+            <tr>
+              <td>EVToRevenue</td>
+              <td id="EVToRevenue"></td>
+            </tr>
+            <tr>
+              <td>EVToEBITDA</td>
+              <td id="EVToEBITDA"></td>
+            </tr>
+            <tr>
+              <td>ForwardPE</td>
+              <td id="ForwardPE"></td>
+            </tr>
+            <tr>
+              <td>TrailingPE</td>
+              <td id="TrailingPE"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="down3">
+        <div class="title-main">Annual Statement</div>
+        <div class="annual">
+          <div class="card3">
+            <div class="title">Balance Sheet</div>
+            <table id="financial-data-table"></table>
+          </div>
+          <div class="card3">
+            <div class="title">Income statement</div>
+            <table id="income-data-table"></table>
+          </div>
+
+          <div class="card3">
+            <div class="title">CashFlow statement</div>
+            <table id="cash-data-table"></table>
+          </div>
+        </div>
+      </div>
+      <table id="news-table">
+        <!-- The news data will be inserted here by the AJAX script -->
+    </table>
+
+      <script src="/static/js/fetch.js"></script>
+    </div>
+  </body>
+</html>
